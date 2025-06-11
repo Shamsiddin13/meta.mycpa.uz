@@ -1,0 +1,12 @@
+services:
+  meta_mc:
+    build: .
+    ports:
+      - "3011:3010"
+    container_name: meta_mycpa
+    networks:
+      - npm_npm_network
+
+networks:
+  npm_npm_network:
+    external: true
